@@ -1,5 +1,13 @@
 @import 'partials/variables';
 
+#ContentProgress {
+  display: contents;
+  min-height: 0;
+  & .sub-container {
+    min-height: initial;
+  }
+}
+
 .headMobile {
   display: none;
 }
@@ -192,5 +200,11 @@
         color: $c-3-700;
       }
     }
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .headMobile .steps {
+    width: 91px;
   }
 }
