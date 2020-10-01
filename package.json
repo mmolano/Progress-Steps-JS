@@ -9,7 +9,7 @@
   "scripts": {
     "webpackDev": "webpack --mode development",
     "webpackDev-watch": "webpack --mode development --watch",
-    "scssComp": "sass src/sass:dist/css --style compressed",
+    "scssComp": "sass src/sass/progress.scss:dist/css/style.css --style compressed",
     "prod": "webpack --mode production && npm run scssComp && npm run codeCheck",
     "codeCheck": "stylelint 'src/sass'"
   },

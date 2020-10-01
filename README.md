@@ -17,6 +17,22 @@ git checkout dev
 npm run codeCheck
 ```
 
+## USAGE
+
+**1:** Import progressBar functions
+```
+import {mobileProgress, progress} from "./progress";
+```
+
+**2:** Copy the html inside index.html
+
+**3:** Add the following functions in the on click event
+```
+mobileProgress(false, 2); -> responsive
+progress(false, 2); -> non responsive
+```
+
+
 ## Useful commands (for more check package.json)
 **1:** webPack
 ```
