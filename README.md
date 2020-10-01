@@ -17,6 +17,23 @@ git checkout dev
 npm run codeCheck
 ```
 
+## USAGE
+
+**1:** Import progressBar functions
+```
+import {mobileProgress, progress} from "./progress";
+```
+
+**2:** Copy the html inside index.html
+
+**3:** Add the following functions in the on click event (your function)
+```
+mobileProgress(false, 2); -> responsive | false if you are clicking on the previous button
+mobileProgress(true, 2); -> put true if you are clicking on the next button
+progress(false, 2); -> non responsive
+```
+
+
 ## Useful commands (for more check package.json)
 **1:** webPack
 ```
