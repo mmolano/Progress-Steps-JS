@@ -1,0 +1,23 @@
+{
+  "name": "headcrumb",
+  "version": "1.0.0",
+  "description": "Progressbar using JS and scss",
+  "scripts": {
+    "webpackDev": "webpack --mode development",
+    "webpackDev-watch": "webpack --mode development --watch",
+    "scssComp": "sass src/sass:dist/css --style compressed",
+    "prod": "webpack --mode production && npm run scssComp && npm run codeCheck",
+    "codeCheck": "stylelint 'src/sass'"
+  },
+  "author": "Miguel Molano",
+  "license": "ISC",
+  "dependencies": {
+    "glob": "^7.1.6",
+    "lodash": "^4.17.20",
+    "path": "^0.12.7",
+    "sass": "^1.26.11",
+    "stylelint": "^13.7.2",
+    "webpack": "^4.44.2",
+    "webpack-bundle-analyzer": "^3.9.0"
+  }
+}
