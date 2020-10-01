@@ -30,7 +30,7 @@ import {mobileProgress, progress} from "./progress";
 ```
 mobileProgress(false, 2); -> responsive | false if you are clicking on the previous button
 mobileProgress(true, 2); -> put true if you are clicking on the next button
-progress(false, 2); -> non responsive
+progress(false, 2); -> non responsive ( must be used with mobileProgress function) 
 ```
 
 
