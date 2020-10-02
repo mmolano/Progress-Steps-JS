@@ -158,7 +158,9 @@
     & .steps {
       z-index: 4;
       display: flex;
-      background-color: $c-1-300;
+      background: linear-gradient(to right, $c-1-500 50%, $c-1-300 50%) right bottom;
+      background-size: 200% 100%;
+      transition: all .5s ease-out;
       height: 28px;
       width: 106px;
       border-radius: 22px;
@@ -191,7 +193,7 @@
         background: #fff;
       }
       &.active {
-        background-color: $c-1-500;
+        background-position: left bottom;
       }
       & span {
         margin: auto;
@@ -202,6 +204,7 @@
     }
   }
 }
+
 
 @media screen and (max-width: 340px) {
   .headMobile .steps {
